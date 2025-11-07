@@ -39,10 +39,10 @@ section {
 }
 
 /* Background colors for each section */
-#home { background-color: #ffe6f0; }
-#portfolio { background-color: #fff0f5; }
-#about { background-color: #ffd6e8; }
-#contact { background-color: #ffccd9; }
+#home { background-color: #ffd8eb; }
+#portfolio { background-color: #ffe9f3; }
+#about { background-color: #ffd8eb; }
+#contact { background-color: #ffe9f3; }
 
 /* Text colors */
 section { color: #333; }

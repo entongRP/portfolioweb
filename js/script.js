@@ -48,12 +48,23 @@ navLinkElements.forEach(link => {
     e.preventDefault();
     const targetId = this.getAttribute('href').substring(1);
     const targetSection = document.getElementById(targetId);
-    const yOffset = -70; // offset for fixed navbar
+    const yOffset = -70; // adjust for navbar height
     const yPosition = targetSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
     window.scrollTo({
       top: yPosition,
       behavior: 'smooth'
     });
+  });
+});
+
+// Make navbar logo scroll to Home
+const logo = document.querySelector('.navbar-brand .logo');
+logo.addEventListener('click', function(e) {
+  e.preventDefault();
+  const targetSection = document.getElementById('home');
+  window.scrollTo({
+    top: targetSection.offsetTop,
+    behavior: 'smooth'
   });
 });

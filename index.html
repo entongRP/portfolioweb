@@ -3,31 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bel Bel | Home</title>
+  <title>Bel Bel Portfolio</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">Bel Bel</div>
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-pink fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home"><img src="images/add-logo-here.png" alt="Logo" class="logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="hero d-flex align-items-center justify-content-center text-center">
+  <div class="container fade-in">
     <h1>Hello, I'm Bel Bel</h1>
     <p>A student at Republic Polytechnic blending <span>design</span> and <span>technology</span> to create user-friendly and visually appealing experiences.</p>
-    <a href="portfolio.html" class="btn">View My Work</a>
-  </section>
+    <a href="#portfolio" class="btn btn-primary mt-3">View My Work</a>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Bel Bel. All rights reserved.</p>
-  </footer>
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio py-5">
+  <div class="container text-center fade-in">
+    <h2 class="mb-5">Portfolio</h2>
+    <div class="row g-4">
+      <!-- Project Cards (6 cards) -->
+      <div class="col-md-4">
+        <div class="card project-card">
+          <img src="images/put-project-image-here.png" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Project 1</h5>
+            <p class="card-text">Description of your project.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card">
+          <img src="images/put-project-image-here.png" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Project 2</h5>
+            <p class="card-text">Description of your project.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card">
+          <img src="images/put-project-image-here.png" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Project 3</h5>
+            <p class="card-text">Description of your project.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card">
+          <img src="images/put-project-image-here.png" class="card-img-top" alt="Project 4">
+          <div class="card-body">
+            <h5 class="card-title">Project 4</h5>
+            <p class="card-text">Description of your project.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card">
+          <img src="images/put-project-image-here.png" class="card-img-top" alt="Project 5">
+          <div class="card-body">
+            <h5 class="card-title">Project 5</h5>
+            <p class="card-text">Description of your project.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card">
+          <img src="images/put-project-image-here.png" class="card-img-top" alt="Project 6">
+          <div class="card-body">
+            <h5 class="card-title">Project 6</h5>
+            <p class="card-text">Description of your project.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about py-5 bg-light fade-in">
+  <div class="container text-center">
+    <h2 class="mb-4">About Me</h2>
+    <p>I’m an IT and digital design student with experience in software development, web design, and data analytics. I enjoy combining creativity and technology to design solutions that are both visually appealing and easy to use. My learning journey has allowed me to explore areas like UX/UI design, data visualization, and front-end development. I’ve also gained experience working in collaborative team projects, building skills in communication, time management, and adapting to different project needs.</p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact py-5 fade-in">
+  <div class="container text-center">
+    <h2 class="mb-4">Contact Me</h2>
+    <p>If you’d like to connect or reach out for internship opportunities, here are my contact details and social links:</p>
+    
+    <ul class="list-unstyled mt-4">
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/entongyee" target="_blank">linkedin.com/in/entongyee</a></li>
+      <li><strong>School Email:</strong> <a href="mailto:24012306@gmail.com">24012306@gmail.com</a></li>
+      <li><strong>Personal Email:</strong> <a href="mailto:en123tong456@gmail.com">en123tong456@gmail.com</a></li>
+      <li><strong>Telegram:</strong> <a href="https://t.me/yrlovebelle" target="_blank">@yrlovebelle</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-3 bg-pink">
+  <p>&copy; 2025 Bel Bel. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -67,9 +67,9 @@ section {
 }
 
 .home-heading {
-  font-size: 150px; /* match logo height */
+  font-size: 100px; /* match logo height */
   line-height: 1;
-  color: #ff4d94;
+  color: #cb416b;
 }
 
 /* Hero Section text */

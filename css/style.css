@@ -39,10 +39,10 @@ section {
 }
 
 /* Background colors for each section */
-#home { background-color: #ffd8eb; }
-#portfolio { background-color: #ffe9f3; }
-#about { background-color: #ffd8eb; }
-#contact { background-color: #ffe9f3; }
+#home { background-color: #ffe6f0; }       /* light pink / intro */
+#portfolio { background-color: #fff0f5; }  /* slightly different pink / portfolio */
+#about { background-color: #d6f0ff; }      /* light pastel blue / about */
+#contact { background-color: #ffd6e8; }    /* soft pink / contact */
 
 /* Text colors */
 section { color: #333; }

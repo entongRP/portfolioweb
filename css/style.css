@@ -1,23 +1,131 @@
-/* Font Pairing */
-h1, h2, h3, button {
-  font-family: 'Philosopher', serif;
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Muli:wght@400;600&display=swap');
+
+/* Headings & Buttons */
+h1, h2, button {
+  font-family: 'Philosopher', sans-serif;
 }
 
+/* Body Text */
 body, p, li, a {
   font-family: 'Muli', sans-serif;
+  color: #2c3e50;
 }
 
-/* Font Weights */
-h1, h2, h3 {
-  font-weight: 700; /* Philosopher bold */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-button {
+/* Body */
+body {
+  scroll-behavior: smooth;
+  background-color: #f5f7fa;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2c3e50;
+}
+
+.navbar .nav-link {
+  color: #ecf0f1 !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #3498db !important;
   font-weight: 600;
+  border-bottom: 2px solid #3498db;
 }
 
-body, p, li, a {
-  font-weight: 400; /* Muli regular */
+.navbar-brand .logo {
+  width: 80px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Sections */
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  transition: background-color 0.5s;
+}
+
+/* Section Colors */
+#home { background-color: #f5f7fa; }        /* light gray-blue */
+#portfolio { background-color: #ffffff; }   /* white for clarity */
+#about { background-color: #e9f0f7; }       /* soft light blue */
+#contact { background-color: #f5f7fa; }     /* match home */
+
+/* Home Heading */
+.home-heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home-logo {
+  height: 150px;
+  width: auto;
+}
+
+.home-heading {
+  font-size: 100px;
+  line-height: 1;
+  color: #2c3e50;
+}
+
+/* Hero Text */
+.hero p span {
+  font-weight: 600;
+  color: #3498db;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #3498db;
+  border: none;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+}
+
+/* Portfolio Cards */
+.project-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Contact Links */
+.contact a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
 }
 
 /* Floating Skills Container */
@@ -34,16 +142,16 @@ body, p, li, a {
   position: absolute;
   display: inline-block;
   padding: 8px 20px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 50px;
   font-weight: bold;
-  color: #ff3385;
+  color: #2c3e50;
   white-space: nowrap;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   animation: floatSkill 6s linear infinite;
 }
 
-/* Random initial positions */
+/* Random initial positions for floating skills */
 .floating-skill:nth-child(1) { top: 10px; left: 5%; animation-delay: 0s; }
 .floating-skill:nth-child(2) { top: 40px; left: 20%; animation-delay: 1s; }
 .floating-skill:nth-child(3) { top: 70px; left: 40%; animation-delay: 2s; }
@@ -51,7 +159,7 @@ body, p, li, a {
 .floating-skill:nth-child(5) { top: 50px; left: 75%; animation-delay: 4s; }
 .floating-skill:nth-child(6) { top: 30px; left: 90%; animation-delay: 5s; }
 
-/* Floating Animation */
+/* Floating Skill Animation */
 @keyframes floatSkill {
   0%   { transform: translateY(0) translateX(0); }
   25%  { transform: translateY(-10px) translateX(5px); }
@@ -60,7 +168,7 @@ body, p, li, a {
   100% { transform: translateY(0) translateX(0); }
 }
 
-/* Floating Icons across Home Section */
+/* Floating Icons */
 .floating-icons {
   position: absolute;
   top: 0;
@@ -72,26 +180,26 @@ body, p, li, a {
   z-index: 0;
 }
 
-/* Individual Icons */
+/* Individual Floating Icons */
 .floating-icons i {
   position: absolute;
   font-size: 40px;
-  color: #ff80ab;
-  background-color: #fff;
+  color: #3498db;
+  background-color: #ffffff;
   border-radius: 50%;
   padding: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
   animation: floatIcon 8s linear infinite;
 }
 
-/* Different starting positions & animation delays */
+/* Icon positions & delays */
 .floating-icons i:nth-child(1) { top: 150px; left: 10%; animation-delay: 0s; }
 .floating-icons i:nth-child(2) { top: 480px; left: 25%; animation-delay: 2s; }
 .floating-icons i:nth-child(3) { top: 140px; left: 50%; animation-delay: 4s; }
 .floating-icons i:nth-child(4) { top: 450px; left: 70%; animation-delay: 1s; }
 .floating-icons i:nth-child(5) { top: 250px; left: 85%; animation-delay: 3s; }
 
-/* Floating Icon Animation */
+/* Icon Animation */
 @keyframes floatIcon {
   0%   { transform: translateY(0px) translateX(0px); }
   25%  { transform: translateY(-20px) translateX(10px); }
@@ -100,123 +208,7 @@ body, p, li, a {
   100% { transform: translateY(0px) translateX(0px); }
 }
 
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body */
-body {
-  color: #333;
-  scroll-behavior: smooth;
-}
-
-/* Navbar */
-.navbar {
-  background-color: #ffccd9;
-}
-
-.navbar .nav-link {
-  color: #fff !important;
-  font-weight: 500;
-}
-
-.navbar .nav-link:hover,
-.navbar .nav-link.active {
-  color: #ff3385 !important;
-  font-weight: 600;
-  border-bottom: 2px solid #ff3385;
-  padding-bottom: 2px;
-}
-
-.navbar-brand .logo {
-  width: 80px;
-  height: auto;
-  cursor: pointer;
-}
-
-/* Full-screen sections */
-section {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 20px;
-  transition: background-color 0.5s;
-}
-
-/* Original pastel background colors */
-#home { background-color: #ffd8eb; }
-#portfolio { background-color: #ffe9f3; }
-#about { background-color: #ffd8eb; }
-#contact { background-color: #ffe9f3; }
-
-/* Home section logo and heading */
-.home-heading-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.home-logo {
-  height: 150px;
-  width: auto;
-}
-
-.home-heading {
-  font-size: 100px;
-  line-height: 1;
-  color: #ff80ab;
-}
-
-/* Hero Section text */
-.hero p span {
-  font-weight: 600;
-  color: #ff3385;
-}
-
-/* Button */
-.btn-primary {
-  background-color: #ff80ab;
-  border: none;
-}
-
-.btn-primary:hover {
-  background-color: #ff3385;
-}
-
-/* Portfolio Cards */
-.project-card {
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-/* Contact links */
-.contact a {
-  color: #ff3385;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.contact a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-footer {
-  background-color: #ffccd9;
-  color: #fff;
-}
-
-/* Fade-in effect */
+/* Fade-in sections */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);

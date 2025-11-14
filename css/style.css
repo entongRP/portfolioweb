@@ -1,16 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+/* Font Pairing */
+h1, h2, h3, button {
+  font-family: 'Philosopher', serif;
+}
 
-h1, h2, button {
-  font-family: 'Chewy', cursive;
+body, p, li, a {
+  font-family: 'Muli', sans-serif;
+}
+
+/* Font Weights */
+h1, h2, h3 {
+  font-weight: 700; /* Philosopher bold */
+}
+
+button {
+  font-weight: 600;
+}
+
+body, p, li, a {
+  font-weight: 400; /* Muli regular */
 }
 
 /* Floating Skills Container */
 .floating-skills-container {
   position: relative;
   width: 100%;
-  height: 150px; /* area below the button */
-  margin-top: 30px; /* spacing from button */
-  overflow: hidden; /* prevent pills from going outside */
+  height: 150px;
+  margin-top: 30px;
+  overflow: hidden;
 }
 
 /* Floating Skill Pills */
@@ -20,7 +36,6 @@ h1, h2, button {
   padding: 8px 20px;
   background-color: #fff;
   border-radius: 50px;
-  font-family: 'Chewy', cursive;
   font-weight: bold;
   color: #ff3385;
   white-space: nowrap;
@@ -28,7 +43,7 @@ h1, h2, button {
   animation: floatSkill 6s linear infinite;
 }
 
-/* Assign random initial positions */
+/* Random initial positions */
 .floating-skill:nth-child(1) { top: 10px; left: 5%; animation-delay: 0s; }
 .floating-skill:nth-child(2) { top: 40px; left: 20%; animation-delay: 1s; }
 .floating-skill:nth-child(3) { top: 70px; left: 40%; animation-delay: 2s; }
@@ -76,7 +91,7 @@ h1, h2, button {
 .floating-icons i:nth-child(4) { top: 450px; left: 70%; animation-delay: 1s; }
 .floating-icons i:nth-child(5) { top: 250px; left: 85%; animation-delay: 3s; }
 
-/* Floating Animation */
+/* Floating Icon Animation */
 @keyframes floatIcon {
   0%   { transform: translateY(0px) translateX(0px); }
   25%  { transform: translateY(-20px) translateX(10px); }
@@ -90,7 +105,6 @@ h1, h2, button {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
 /* Body */

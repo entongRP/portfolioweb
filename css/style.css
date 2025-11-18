@@ -156,11 +156,11 @@ footer p {
 }
 
 /* Icon positions & delays */
-.floating-icons i:nth-child(1) { top: 150px; left: 10%; animation-delay: 0s; }
-.floating-icons i:nth-child(2) { top: 480px; left: 25%; animation-delay: 2s; }
-.floating-icons i:nth-child(3) { top: 140px; left: 50%; animation-delay: 4s; }
-.floating-icons i:nth-child(4) { top: 450px; left: 70%; animation-delay: 1s; }
-.floating-icons i:nth-child(5) { top: 250px; left: 85%; animation-delay: 3s; }
+.floating-icons i:nth-child(1) { top: 125px; left: 10%; animation-delay: 0s; }
+.floating-icons i:nth-child(2) { top: 560px; left: 10%; animation-delay: 2s; }
+.floating-icons i:nth-child(3) { top: 140px; left: 35%; animation-delay: 4s; }
+.floating-icons i:nth-child(4) { top: 490px; left: 38%; animation-delay: 1s; }
+.floating-icons i:nth-child(5) { top: 540px; left: 25%; animation-delay: 3s; }
 
 /* Icon Animation */
 @keyframes floatIcon {

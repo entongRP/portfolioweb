@@ -69,3 +69,39 @@ logo.addEventListener('click', function(e) {
   });
 });
 
+const projects = {
+  1: {
+    title: "Brand Identity System",
+    desc: "Complete brand identity including logo, color palette, and typography guidelines",
+    media: '<img src="images/project1.png" class="img-fluid" alt="Project 1">'
+  },
+  2: {
+    title: "Typography Poster Series",
+    desc: "Experimental typography posters exploring Gestalt principles and visual hierarchy",
+    media: '<img src="images/project2.png" class="img-fluid" alt="Project 2">'
+  }
+};
+
+const projectCards = document.querySelectorAll(".project-card");
+const projectDisplay = document.getElementById("project-display");
+const projectTitle = document.getElementById("project-title");
+const projectDesc = document.getElementById("project-desc");
+const projectMedia = document.getElementById("project-media");
+const backBtn = document.getElementById("back-btn");
+
+projectCards.forEach(card => {
+  card.addEventListener("click", () => {
+    const id = card.dataset.project;
+    const p = projects[id];
+    projectTitle.innerText = p.title;
+    projectDesc.innerText = p.desc;
+    projectMedia.innerHTML = p.media;
+    document.querySelector(".row.g-4").style.display = "none";
+    projectDisplay.style.display = "block";
+  });
+});
+
+backBtn.addEventListener("click", () => {
+  projectDisplay.style.display = "none";
+  document.querySelector(".row.g-4").style.display = "flex";
+});

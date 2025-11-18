@@ -131,46 +131,6 @@ footer p {
   color: #fbfbfb;
 }
 
-/* Floating Skills Container */
-.floating-skills-container {
-  position: relative;
-  width: 100%;
-  height: 150px;
-  margin-top: 30px;
-  overflow: hidden;
-}
-
-/* Floating Skill Pills */
-.floating-skill {
-  position: absolute;
-  display: inline-block;
-  padding: 8px 20px;
-  background-color: #ffffff;
-  border-radius: 50px;
-  font-weight: bold;
-  color: #2c3e50;
-  white-space: nowrap;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  animation: floatSkill 6s linear infinite;
-}
-
-/* Random initial positions for floating skills */
-.floating-skill:nth-child(1) { top: 10px; left: 5%; animation-delay: 0s; }
-.floating-skill:nth-child(2) { top: 40px; left: 20%; animation-delay: 1s; }
-.floating-skill:nth-child(3) { top: 70px; left: 40%; animation-delay: 2s; }
-.floating-skill:nth-child(4) { top: 20px; left: 60%; animation-delay: 3s; }
-.floating-skill:nth-child(5) { top: 50px; left: 75%; animation-delay: 4s; }
-.floating-skill:nth-child(6) { top: 30px; left: 90%; animation-delay: 5s; }
-
-/* Floating Skill Animation */
-@keyframes floatSkill {
-  0%   { transform: translateY(0) translateX(0); }
-  25%  { transform: translateY(-10px) translateX(5px); }
-  50%  { transform: translateY(10px) translateX(-5px); }
-  75%  { transform: translateY(-5px) translateX(5px); }
-  100% { transform: translateY(0) translateX(0); }
-}
-
 /* Floating Icons */
 .floating-icons {
   position: absolute;
@@ -257,4 +217,37 @@ footer p {
   text-decoration: none;       /* ensure no underline on hover */
 }
 
+/* Ensure project cards are equal height */
+.project-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make card body take full height */
+.project-card .card-body {
+  flex: 1;
+}
+
+/* Icon theme color */
+.icon-theme {
+  color: #3498db; /* Matches index.html blue theme */
+}
+
+/* Highlighted icon style */
+.icon-bg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: #3498db; /* Blue theme */
+  border-radius: 12px;        /* Rounded square */
+  color: #ffffff;             /* Icon color white */
+  font-size: 1.2rem;          /* Bigger icon */
+}
+
+.icon-bg i {
+  pointer-events: none;
+}
 

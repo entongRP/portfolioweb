@@ -155,7 +155,7 @@ footer p {
   animation: floatIcon 8s linear infinite;
 }
 
-/* Icon positions & delays */
+/* Icon positions & delays
 .floating-icons i:nth-child(1) { top: 125px; left: 10%; animation-delay: 0s; }
 .floating-icons i:nth-child(2) { top: 560px; left: 10%; animation-delay: 2s; }
 .floating-icons i:nth-child(3) { top: 140px; left: 35%; animation-delay: 4s; }
@@ -169,7 +169,7 @@ footer p {
   50%  { transform: translateY(20px) translateX(-10px); }
   75%  { transform: translateY(-10px) translateX(10px); }
   100% { transform: translateY(0px) translateX(0px); }
-}
+} */
 
 /* Fade-in sections */
 .fade-in {

@@ -4,22 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Design Works- Entong's Portfolio</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Muli:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- Navbar (same as index) -->
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="images/logopdWHITE.png" alt="Logo" class="logo"></a>
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logopdWHITE.png" alt="Logo" class="logo">
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link active" href="index.html#portfolio">Back To Projects</a></li>
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html#portfolio">Back To Projects</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -27,7 +32,6 @@
 
 <!-- Projects List -->
 <section class="container mt-5 pt-5">
-    <h2 class="text-center mb-4"> </h2>
   <h2 class="text-center mb-4">Design Works</h2>
   <p class="text-center mb-5 project-subtitle">
     A showcase of <span class="highlight">creativity</span> and <span class="highlight">design skills</span>
@@ -35,6 +39,7 @@
 
   <div class="row g-4 justify-content-center">
 
+    <!-- UI/UX -->
     <div class="col-lg-5 col-md-6">
       <div class="card project-card h-100 p-3">
         <div class="card-body text-start">
@@ -49,11 +54,16 @@
             <li>Prototyping (Figma)</li>
           </ul>
         </div>
-                 <a href="https://drive.google.com/drive/folders/1aI2ONI-g-ic-51PVJrVxVJwlKVYwYeGr?usp=drive_link" target="_blank" class="btn btn-primary mt-3">View Project</a>
+        <button
+          class="btn btn-primary mt-3"
+          data-bs-toggle="modal"
+          data-bs-target="#uiuxModal">
+          View Project
+        </button>
       </div>
     </div>
 
-    <!-- Project Card 1 -->
+    <!-- Brand Identity -->
     <div class="col-lg-5 col-md-6">
       <div class="card project-card h-100 p-3">
         <div class="card-body text-start">
@@ -67,33 +77,74 @@
             <li>AI Assistance</li>
           </ul>
         </div>
-                 <a href="https://drive.google.com/drive/folders/1VX4Wx2z3VmKTc0H5wuHS3Z1X-JAUaFMH?usp=drive_link" target="_blank" class="btn btn-primary mt-3">View Project</a>
+        <button
+          class="btn btn-primary mt-3"
+          data-bs-toggle="modal"
+          data-bs-target="#brandingModal">
+          View Project
+        </button>
       </div>
-    </div>
-
-    <!-- Project Card 2 -->
-    <!-- <div class="col-lg-5 col-md-6">
-      <div class="card project-card h-100 p-3">
-        <div class="card-body text-start">
-          <h5 class="card-title">Visual Design Explorations</h5>
-          <p class="card-text">
-          A collection of character, logo, and typography designs showcasing creative experimentation in visual branding.
-        </p>
-          <ul class="project-tags">
-            <li>Characters</li>
-            <li>Logos</li>
-            <li>Typographys</li>
-          </ul>
-        </div>
-                 <a href="https://drive.google.com/drive/folders/1Iy_RjffctcwI-ojjQln052wJ3-dkdZt4?usp=drive_link" target="_blank" class="btn btn-primary mt-3">View Project</a>
-      </div> -->
     </div>
 
   </div>
 </section>
 
+<!-- UI/UX MODAL -->
+<div class="modal fade" id="uiuxModal" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">UI/UX Design Projects</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <h6 class="mb-2">UI/UX Case Study: MediTrack</h6>
+        <iframe src="design/C218 FA - MediTrack - 24012306 - YeeEnTong (1).pdf" width="100%" height="600" style="border:none;"></iframe>
+
+        <h6 class="mt-4 mb-2">UI/UX Case Study: TerraBloom</h6>
+        <iframe src="design/TerraBloom.pdf" width="100%" height="600" style="border:none;"></iframe>
+
+        <h6 class="mt-4 mb-2">Terrabloom Demo Video</h6>
+        <video width="100%" controls>
+          <source src="design/TerraBloomDemo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BRANDING MODAL -->
+<div class="modal fade" id="brandingModal" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Brand Identity</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <h6 class="mb-2">Brand Identity Document 1</h6>
+        <iframe src="design/Brand Identity Slides.pptx.pdf" width="100%" height="600" style="border:none;"></iframe>
+
+        <h6 class="mt-4 mb-2">Brand Identity Document 2</h6>
+        <iframe src="design/Final Design + Prototypes.pdf" width="100%" height="600" style="border:none;"></iframe>
+
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Footer -->
 <footer class="text-center py-3 mt-5">
   <p>&copy; 2025 Entong. All rights reserved.</p>
 </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

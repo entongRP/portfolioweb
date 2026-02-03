@@ -420,3 +420,38 @@ footer p {
   border-radius: 6px;
   font-size: 0.8rem;
 }
+
+/* Hover video container */
+.hover-video {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Image */
+.video-thumb {
+  width: 100%;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+/* Video */
+.video-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover effect */
+.hover-video:hover .video-thumb {
+  opacity: 0;
+}
+
+.hover-video:hover .video-preview {
+  opacity: 1;
+}

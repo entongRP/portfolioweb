@@ -34,9 +34,6 @@
 
   <div class="row g-4 justify-content-center">
 
-    <!-- CARD TEMPLATE -->
-    <!-- COPY THIS STRUCTURE for all 5 cards -->
-
     <!-- Project 1 -->
     <div class="col-lg-5 col-md-6">
       <div class="card project-card h-100 p-3">
@@ -46,13 +43,13 @@
           and see which items are already packed. It helps travelers organize their 
           packing efficiently and ensures they don’t forget anything before their trip.</p>
 
-           <a href="https://travel-packing-list-application.vercel.app/" target="_blank" class="btn btn-primary mb-3">View Live Web</a>
+        <a href="https://travel-packing-list-application.vercel.app/" target="_blank" class="btn btn-primary mb-3">View Live Web</a>
 
-
-        <div class="project-media mb-3">
-          <img src="images/travelpackinglist_image.png" class="img-fluid rounded" alt="Project Image">
-          <!-- OR VIDEO -->
-          <!-- <video class="w-100 rounded" controls><source src="videos/project1.mp4"></video> -->
+        <div class="project-media mb-3 hover-video">
+          <img src="images/travelpackinglist_image.png" class="img-fluid rounded video-thumb" alt="Project Image">
+          <video class="video-preview rounded" muted loop>
+            <source src="videos/travellist_web_demo.mp4" type="video/mp4">
+          </video>
         </div>
 
         <ul class="project-tags">
@@ -74,11 +71,13 @@
           It helps users easily see pizza ingredients, prices, and choose what they want, 
           while also showing whether the shop is currently open for orders.</p>
 
-           <a href="https://pizza-app-rouge-chi.vercel.app/" target="_blank" class="btn btn-primary mb-3">View Live Web</a>
+        <a href="https://pizza-app-rouge-chi.vercel.app/" target="_blank" class="btn btn-primary mb-3">View Live Web</a>
 
-
-        <div class="project-media mb-3">
-          <img src="images/pizzaweb_image.png" class="img-fluid rounded" alt="Project Image">
+        <div class="project-media mb-3 hover-video">
+          <img src="images/pizzaweb_image.png" class="img-fluid rounded video-thumb" alt="Project Image">
+          <video class="video-preview rounded" muted loop>
+            <source src="videos/pizzamenu_web_demo.mp4" type="video/mp4">
+          </video>
         </div>
 
         <ul class="project-tags">
@@ -93,16 +92,18 @@
     <!-- Project 3 -->
     <div class="col-lg-5 col-md-6">
       <div class="card project-card h-100 p-3">
-        <h5 class="card-title">Card Management Web</h5>
-        <p class="card-text">This app is a Card Management Application that lets users view, add, edit, 
-          and delete cards in one place. It helps users keep track of all their cards easily and manage 
-          them efficiently, making it simple to update or remove cards whenever needed.</p>
+        <h5 class="card-title">Assignment List Tracker Web</h5>
+        <p class="card-text">This app is a Assignment List Tracker Application that lets users view, add, edit, 
+          and delete assignment list in one place. It helps users keep track of all their assignment lists easily and manage 
+          them efficiently, making it simple to update or remove assignment lists whenever needed.</p>
 
-          <a href="https://c219-l19.vercel.app/" target="_blank" class="btn btn-primary mb-3">View Live Web</a>
+        <a href="https://c219-l19.vercel.app/" target="_blank" class="btn btn-primary mb-3">View Live Web</a>
 
-
-        <div class="project-media mb-3">
-          <img src="images/cardappli_image.png" class="img-fluid rounded" alt="Project Image">
+        <div class="project-media mb-3 hover-video">
+          <img src="images/cardappli_image.png" class="img-fluid rounded video-thumb" alt="Project Image">
+          <video class="video-preview rounded" muted loop>
+            <source src="videos/card_management_web_demo.mp4" type="video/mp4">
+          </video>
         </div>
 
         <ul class="project-tags">
@@ -123,13 +124,16 @@
         <p class="card-text">This app is a Task List Tracker that lets users add tasks, 
           edit them, delete them, and mark them as completed or unfinished. It helps users keep track of what they still 
           need to do and what they have already finished.</p>
-          
-          <a href="PASTE_DRIVE_LINK_HERE" target="_blank" class="btn btn-primary mb-3">
-  Demo Vid
-</a>
 
-        <div class="project-media mb-3">
-          <img src="images/trackinglistt_webapp.png" class="img-fluid rounded" alt="Project Image">
+        <a href="https://drive.google.com/drive/folders/15AmQwnL2bz4KWEN_CLIxtwwkL855AZfA?usp=sharing" target="_blank" class="btn btn-primary mb-3">
+          Demo Vid
+        </a>
+
+        <div class="project-media mb-3 hover-video">
+          <img src="images/trackinglistt_webapp.png" class="img-fluid rounded video-thumb" alt="Project Image">
+          <video class="video-preview rounded" muted loop>
+            <source src="videos/tasklist_mobile_app.mp4" type="video/mp4">
+          </video>
         </div>
 
         <ul class="project-tags">
@@ -148,11 +152,15 @@
           update their details, and remove fruits from the list.
            It helps users keep track of all the fruits they have in one organised place.</p>
 
-          <a href="PASTE_DRIVE_LINK_HERE" target="_blank" class="btn btn-primary mb-3">
-  Demo Vid
-</a>
-        <div class="project-media mb-3">
-          <img src="images/fruitlist_webapp.png" class="img-fluid rounded" alt="Project Image">
+        <a href="https://drive.google.com/drive/folders/15AmQwnL2bz4KWEN_CLIxtwwkL855AZfA?usp=sharing" target="_blank" class="btn btn-primary mb-3">
+          Demo Vid
+        </a>
+
+        <div class="project-media mb-3 hover-video">
+          <img src="images/fruitlist_webapp.png" class="img-fluid rounded video-thumb" alt="Project Image">
+          <video class="video-preview rounded" muted loop>
+            <source src="videos/fruitlist_webapp_demo.mp4" type="video/mp4">
+          </video>
         </div>
 
         <ul class="project-tags">
@@ -172,3 +180,20 @@
   <p>&copy; 2025 Entong. All rights reserved.</p>
 </footer>
 
+<script>
+  document.querySelectorAll('.hover-video').forEach(card => {
+    const video = card.querySelector('video');
+
+    card.addEventListener('mouseenter', () => {
+      video.currentTime = 0;
+      video.play();
+    });
+
+    card.addEventListener('mouseleave', () => {
+      video.pause();
+    });
+  });
+</script>
+
+</body>
+</html>

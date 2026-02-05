@@ -455,3 +455,11 @@ footer p {
 .hover-video:hover .video-preview {
   opacity: 1;
 }
+
+.project-writeup-header {
+  font-weight: bold;
+  color: #5493d3; /* Dark blue */
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
